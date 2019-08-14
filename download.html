@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/menudown.css" />
+	<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/menudown.js" ></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!--头部 -->
+	<a href="g-details2.html"><div class="mine-top">
+		<p class="p1">提交订单</p>
+	</div>
+	</a>
+<!-- 下载 -->
+	<div style="padding:0 10px;box-sizing:border-box;">
+		<div class="download">
+			<div class="d-top">
+				<img src="images/tb12.png" alt="">
+				<p class="p1">单文下载</p>
+				<p class="p2">必修1第一章第一节试题试题试题</p>
+			</div>
+			<div class="d-bottom">
+				<div class="d-b-l">付款金额</div>
+				<div class="d-b-r">￥3.00</div>
+			</div>
+			<button>立即购买</button>
+		</div>
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+</body>
+</html>

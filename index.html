@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 40px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.3.2.min.js"></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!-- 头部 -->
+	<div class="top">
+		<p>Eπ海淀数学教研</p>
+	</div>
+<!-- 轮播 -->	
+<div class="box" id="box">
+	<ul id="list">
+		<li><img src="images/banner.png" alt=""></li>
+		<li><img src="images/banner.png" alt=""></li>
+		<li><img src="images/banner.png" alt=""></li>
+	</ul>
+	<p id="dian"><em class="active"></em><em></em><em></em></p>
+	<a href="###" class="prev" id="prev"></a>
+	<a href="###" class="next" id="next"></a>
+</div>
+<!-- 试题 -->
+	<div class="test">
+		<a href="general.html"><li>
+			<div class="con">
+				<img src="images/tb1.png" alt="">
+				<p>统考试题</p>
+			</div>
+		</li>
+		</a>
+		<a href="test.html"><li>
+			<div class="con">
+				<img src="images/tb2.png" alt="">
+				<p>名校试题</p>
+			</div>
+		</li>
+		</a>
+		<a href="confess.html"><li>
+			<div class="con" style="border-right:none;">
+				<img src="images/tb3.png" alt="">
+				<p>自招竞赛</p>
+			</div>
+		</li>
+		</a>
+	</div>
+<!-- 梯度 -->
+	<div class="gradient">
+		<p class="p1"><img src="images/back.png" alt="">五维梯度介绍<img src="images/back.png" alt=""></p>
+		<div class="img1"><img src="images/gra1.png" alt=""></div>
+	</div>
+<!-- 挑战 -->
+	<div class="chall">
+		<p class="p1">而这些能力的形成不是一蹴而就的，需要由简到繁，由浅入深的逐步提高</p>
+		<div class="word">
+			<div class="w-r">
+				<img src="images/trophy.png" alt="">
+				<p class="w1">第三梯度：挑战</p>
+				<p class="w2">第二梯度：提高</p>
+				<p class="w3">第一梯度：基础</p>
+			</div>
+		</div>
+		<div class="gang"></div>
+	</div>
+<!-- 教师 -->
+	<div class="teacher">
+		<p class="p1">五维梯度训练是由海淀优秀教师精心设计，直击重点、难点、易错点</p>
+		<ul>
+			<li>
+				<p class="w1">第一梯度</p>
+				<p class="w2">具体，特殊，一步两步推理，识图，简单运算，重基础，重概念，会分析简单问题</p>
+			</li>
+			<li>
+				<p class="w1" style="color:#6846d6;background:url(images/tb5.png) no-repeat left;">第二梯度</p>
+				<p class="w2">简单知识迁移，简单换元，引入简单参量，两步推理，分两类讨论，画图，多步运算，初步估算，发现问题并探索猜想</p>
+			</li>
+			<li>
+				<p class="w1" style="color:#1353c5;background:url(images/tb6.png) no-repeat left;">第三梯度</p>
+				<p class="w2">抽象知识迁移，整体换元，引入参量，数学符号语言，多步推理，变图，优化运算求解过程，合理估算，函数方程思想，分三种及以上讨论，提出问题并探索猜想论证</p>
+			</li>
+		</ul>
+	</div>
+<!-- 努力 -->
+	<div class="strive">
+		<div class="img1"><img src="images/word.png" alt=""></div>
+		<div class="img2"><img src="images/book.png" alt=""></div>
+	</div>
+<!-- 积分 -->
+	<div class="integral">
+		<p class="p1">积分获得方式</p>
+		<ul>
+			<li>
+				<span>a.</span>登录公众号并且接受授权成为会员即可获得积分。
+			</li>
+			<li>
+				<span>b.</span>分享给好友，好友通过链接点击进入后即可获得积分。
+			</li>
+			<li>
+				<span>c.</span>上传悬赏资料获得积分。
+			</li>
+		</ul>
+	</div>
+<!-- 底部 -->
+	<div class="footer">
+		<ul>
+			<a href="special.html"><li>
+				<img src="images/book1.png" alt="">
+				<p class="word">专题秘籍</p>
+			</li>
+			</a>
+			<a href="gradient.html"><li class="active">
+				<img src="images/td1.png" alt="">
+				<p class="word"style="margin-top:8px;font-weight: bold;">五维梯度</p>
+			</li>
+			</a>
+			<a href="mine.html">
+				<li>
+				<img src="images/me.png" alt="">
+				<p class="word">我的</p>
+				</li>
+			</a>
+		</ul>
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+<script>
+		var oBox=document.getElementById('box');
+		var oList=document.getElementById('list');
+		var oDian=document.getElementById('dian');
+		var oPrev=document.getElementById('prev');
+		var oNext=document.getElementById('next');
+		var oLi=oList.getElementsByTagName('li');
+		var oEm=oDian.getElementsByTagName('em');
+		var num=0;
+		var timer=null;
+
+         function tab(){
+         		for(var i=0;i<oEm.length;i++){
+					oEm[i].className='';
+				}
+				 oEm[num].className='active';
+				 oList.style.left=-num*oLi[0].offsetWidth+'px';
+			}
+
+
+		for(var i=0;i<oEm.length;i++){
+		     oEm[i].index=i;
+			oEm[i].onclick=function(){
+				num=this.index;
+				tab();
+			}
+
+
+			oPrev.onclick=function(){
+				num--;
+				if(num==-1){
+					num=oEm.length-1;
+				}
+				tab();
+			}
+
+
+			oNext.onclick=function(){
+				num++;
+				if(num==oEm.length){
+					num=0;
+				}
+				tab();
+		}
+	}
+
+	timer=setInterval(function(){
+		num++;
+				if(num==oEm.length){
+					num=0;
+				}
+				tab();
+		},2000)
+	oBox.onmouseover=function(){
+		clearInterval(timer);
+	}
+	oBox.onmouseout=function(){
+		clearInterval(timer);
+		timer=setInterval(function(){
+		num++;
+				if(num==oEm.length){
+					num=0;
+				}
+				tab();
+		},2000)
+	}
+</script>
+</body>
+</html>

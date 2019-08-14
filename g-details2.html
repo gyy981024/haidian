@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/menudown.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/menudown.js" ></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<style>
+		body{
+			background-color: #fff;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.distr .nav-tabs li{
+			margin: 0;
+			width: 24.95%;
+			background-color: #E4F0FF;
+			border-right: 1px solid #C6D2E6;
+		}
+		
+		.nav-tabs > li.active > a{
+			background-color: #4783ED;
+			color: #fff;
+			border-bottom: none;
+		}
+		.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+			background-color: #4783ED;
+			color: #fff;
+			border-bottom: none;
+		}
+	</style>
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!--头部 -->
+	<a href="gradient.html"><div class="mine-top">
+		<p class="p1">2019年高一（上）期中数学统考试题</p>
+	</div>
+	</a>
+<!-- nav -->
+	<div class="s-nav">
+		必修1第一章试题
+	</div>
+<!-- 详情 -->
+	<div class="distr">
+		 <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist" style="    position: fixed; top: 1.8rem;left: 0;">
+            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">专题讲义</a></li>
+            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">基础训练</a></li>
+            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">提高训练</a></li>
+            <li role="presentation" style="border-right:none;"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">挑战训练</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div style="margin-top:7rem;">
+          <div class="tab-content tabs">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+              <div class="details">
+				<img src="images/img2.png" alt="">
+			  </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section2">
+              <div class="details">
+				<img src="images/img2.png" alt="">
+			  </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section2">
+              <div class="details">
+				<img src="images/img2.png" alt="">
+			  </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="Section2">
+              <div class="details">
+				<img src="images/img2.png" alt="">
+			  </div>
+            </div>
+          </div>
+          </div>
+	</div>
+<!-- 按钮 -->
+	<div class="s-bottom">
+		<ul>
+			<li>VIP会员下载</li>
+			<li>积分下载</li>
+			<a href="download.html"><li>单文下载</li></a>
+			<li style="border-right:none;">打包下载</li>
+		</ul>
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+<!-- 分享 -->
+	<a href="###"><div class="share">
+		<img src="images/fx.png" alt="">
+		<p class="p1">分享</p>
+	</div>
+	</a>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 40px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.3.2.min.js"></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!-- 我的-头部 -->
+	<div class="mine-top">
+		<p class="p1">我的</p>
+	</div>
+<!-- 个人信息 -->
+	<div class="mation">
+		<div class="m-c">
+			<div class="m-c-t">
+				<div class="m-c-t-l">
+					<img src="images/head.png" alt="">
+					<div class="word">
+						<p class="p1">睡觉中的熊</p>
+						<p class="p2">普通会员</p>
+					</div>
+				</div>
+				<a href="rech.html"><div class="m-c-t-r">
+					<div class="cir"><img src="images/tb.png" alt=""></div>
+					<p class="p1">充值VIP会员</p>
+				</div>
+				</a>
+			</div>
+			<div class="m-c-b">
+				<a href="integral.html"><div class="m-c-b-inte">
+					<p class="p1">455</p>
+					<p class="p2">积分</p>
+				</div>
+				</a>
+				<a href="balance.html"><div class="m-c-b-balan">
+					<p class="p1">50</p>
+					<p class="p2">余额</p>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+<!-- 内容 -->
+	<div style="padding: 0 10px;box-sizing:border-box;margin-bottom:4rem;">
+		<div class="content">
+			<ul>
+				<a href="perfect.html"><li>
+					<img src="images/tb7.png" alt="" style="width:0.66rem;">
+					<p class="p1" style="margin-left:1.3rem;">会员信息完善</p>
+				</li>
+				</a>
+				<a href="down.html"><li>
+					<img src="images/tb8.png" alt="">
+					<p class="p1">我的下载</p>
+				</li>
+				</a>
+				<a href="upload.html"><li>
+					<img src="images/tb9.png" alt="">
+					<p class="p1">我的上传</p>
+				</li>
+				</a>
+				<a href="distr.html"><li>
+					<img src="images/tb10.png" alt="">
+					<p class="p1">我的分销</p>
+				</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+<!-- 底部 -->
+	<div class="footer">
+		<ul>
+			<a href="special.html"><li>
+				<img src="images/book1.png" alt="">
+				<p class="word">专题秘籍</p>
+			</li>
+			</a>
+			<a href="gradient.html"><li class="active">
+				<img src="images/td1.png" alt="">
+				<p class="word"style="margin-top:8px;font-weight: bold;">五维梯度</p>
+			</li>
+			</a>
+			<a href="mine.html">
+				<li>
+				<img src="images/me2.png" alt="">
+				<p class="word">我的</p>
+				</li>
+			</a>
+		</ul>
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+</body>
+</html>

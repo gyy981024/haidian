@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 40px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.3.2.min.js"></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!-- 我的-头部 -->
+	<a href="mine.html"><div class="mine-top">
+		<p class="p1">会员信息完善</p>
+	</div>
+	</a>
+<!-- 完善 -->
+	<div style="padding:0 10px;box-sizing:border-box;margin-top:2.5rem;">
+		<div class="perfect">
+			<ul>
+				<li>
+					<p class="p1">身份</p>
+					<div class="option">
+						<div class="op act" id="op1">教师</div>
+						<div class="op"id="op2">学生</div>
+					</div>
+				</li>
+				<li>
+					<p class="p1">姓名</p>
+					<input type="text" value="请填写真实的姓名">
+				</li>
+				<li>
+					<p class="p1">手机号</p>
+					<input type="text" value="请填写联系电话">
+				</li>
+				<li>
+					<p class="p1">年级</p>
+					<input type="text" value="请填写年级">
+				</li>
+			</ul>
+			<button>完成</button>
+		</div>
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+<script>
+	$('#op1').click(function(){
+		$('#op2').css('background-color','#fff')
+		$('#op2').css('color','#1353C5')
+		$('#op1').css('background-color','#1353C5')
+		$('#op1').css('color','#fff')
+	})
+	$('#op2').click(function(){
+		$('#op1').css('background-color','#fff')
+		$('#op1').css('color','#1353C5')
+		$('#op2').css('background-color','#1353C5')
+		$('#op2').css('color','#fff')
+	})
+</script>
+
+</body>
+</html>

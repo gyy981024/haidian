@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/menudown.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/menudown.js" ></script>
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<style>
+		body{
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<script>
+       	window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+				var _html = document.getElementsByTagName('html')[0];
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+       	 }
+</script>
+<!--头部 -->
+	<a href="general.html"><div class="mine-top">
+		<p class="p1">2019年高一（上）期中数学统考试题</p>
+	</div>
+	</a>
+<!-- 按钮 -->
+	<div class="bottom">
+		<button>预览</button>
+		<button style="background:linear-gradient(to right,#EFA511,#EBB63B);">WORD版及PDF版下载</button>
+	</div>
+<!-- 详情 -->
+	<div class="details">
+		<img src="images/img2.png" alt="">
+	</div>
+<!-- 首页 -->
+	<a href="index.html"><div class="home">
+		<img src="images/home.png" alt="">
+		<p class="p1">首页</p>
+	</div>
+	</a>
+<!-- 分享 -->
+	<a href="###"><div class="share">
+		<img src="images/fx.png" alt="">
+		<p class="p1">分享</p>
+	</div>
+	</a>
+</body>
+</html>
